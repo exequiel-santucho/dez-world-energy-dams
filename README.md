@@ -28,7 +28,7 @@ In this sense, we try to answer the following questions:
 
 1. **Cloud:**
    
-   - [Google Cloud Platform (GCP)]([Cloud Computing Services | Google Cloud](https://cloud.google.com/?utm_source=bing&utm_medium=cpc&utm_campaign=latam-AR-all-es-dr-BKWS-all-all-trial-e-dr-1707800-LUAC0016410&utm_content=text-ad-none-any-DEV_c-CRE_-ADGP_Hybrid+%7C+BKWS+-+MIX+%7C+Txt_+GCP-General-KWID_43700067403123893-kwd-77859523038025:loc-8&utm_term=KW_Google+Cloud+Platform-ST_Google+Cloud+Platform&gclid=f110f2a74b1b1da673c894aa2e0948fa&gclsrc=3p.ds&hl=en))
+   - [Google Cloud Platform (GCP)](https://cloud.google.com/?utm_source=bing&utm_medium=cpc&utm_campaign=latam-AR-all-es-dr-BKWS-all-all-trial-e-dr-1707800-LUAC0016410&utm_content=text-ad-none-any-DEV_c-CRE_-ADGP_Hybrid+%7C+BKWS+-+MIX+%7C+Txt_+GCP-General-KWID_43700067403123893-kwd-77859523038025:loc-8&utm_term=KW_Google+Cloud+Platform-ST_Google+Cloud+Platform&gclid=f110f2a74b1b1da673c894aa2e0948fa&gclsrc=3p.ds&hl=en)
    
    - [Terraform (IaC)](https://www.terraform.io/)
 
@@ -50,7 +50,7 @@ In this sense, we try to answer the following questions:
 
 6. **Dashboarding:**
    
-   - [Google Looker Studio]([Looker Studio Overview (google.com)](https://lookerstudio.google.com/overview))
+   - [Google Looker Studio](https://lookerstudio.google.com/overview)
 
 ### Architecture
 
@@ -72,7 +72,7 @@ After analyzing data from the year 2000 to the present, we can be said that:
 
 ### Folder navigation
 
-#### code
+#### `./code`
 
 **- exploration.ipynb**
 
@@ -82,41 +82,41 @@ Notebook with Python script to data exploration.
 
 SQL queries for create tables in BigQuery before use dbt.
 
-#### data
+#### `./data`
 
 **- world_dams.csv; world_dams_meta.csv**
 
-This csv database contains hydropower dam locations (lat/long) as well as physical, electrical, and administrative information to help stakeholders identify opportunities for future hydro-connected solar installations. Obtained from [here]([Global - Dams Database - Dataset - ENERGYDATA.INFO](https://energydata.info/dataset/global-dams-database)).
+This csv database contains hydropower dam locations (lat/long) as well as physical, electrical, and administrative information to help stakeholders identify opportunities for future hydro-connected solar installations. Obtained from [here](https://energydata.info/dataset/global-dams-database).
 
 **- world_energy_consumption.csv; world_energy_consumption_meta.csv**
 
-This dataset consists of energy consumption and production of each country in respective years. This is a collection of key metrics maintained by [*Our World in Data*](https://ourworldindata.org/energy). It is updated regularly and includes data on energy consumption (primary energy, per capita, and growth rates), energy mix, electricity mix and other relevant metrics. Obtained from [here]([World Energy Consumption | Kaggle](https://www.kaggle.com/datasets/pralabhpoudel/world-energy-consumption?resource=download)).
+This dataset consists of energy consumption and production of each country in respective years. This is a collection of key metrics maintained by [*Our World in Data*](https://ourworldindata.org/energy). It is updated regularly and includes data on energy consumption (primary energy, per capita, and growth rates), energy mix, electricity mix and other relevant metrics. Obtained from [here](https://www.kaggle.com/datasets/pralabhpoudel/world-energy-consumption?resource=download).
 
 **- world_hydropower_generation.csv**
 
-This dataset is compiled by Our World in Data based on two sources:  BP Statistical Review of World Energy and Ember. Obtanied from [here]([World Hydropower Generation | Kaggle](https://www.kaggle.com/datasets/jorgesandoval/hydropower-generation)).
+This dataset is compiled by Our World in Data based on two sources:  BP Statistical Review of World Energy and Ember. Obtanied from [here](https://www.kaggle.com/datasets/jorgesandoval/hydropower-generation).
 
-#### dbt
+#### `./dbt`
 
 Sub folders and files for the whole dbt project.
 
-#### images
+#### `./images`
 
 Various images of mage pipelines and dbt models, among other things
 
-#### keys
+#### `./keys`
 
 Folder for secrets. Inside you can put your .json key from GCP.
 
-#### looker_studio
+#### `./looker_studio`
 
 Dashboard resulting from the design in looker studio and access link.
 
-#### mage
+#### `./mage`
 
 Sub folders and files for the whole mage project.
 
-#### terraform
+#### `./terraform`
 
 **- main.tf**
 
@@ -130,4 +130,4 @@ File containing variable definitions used in the main Terraform file (main.tf), 
 
 ### Tutorial
 
-For the instructions and walkthrough, please refer to [TUTORIAL.md](https://github.com/JChz6/DE-ZCamp-Project/blob/main/TUTORIAL.md).
+For the instructions and walkthrough, please refer to [TUTORIAL.md](https://github.com/exequiel-santucho/dez-world-energy-dams/blob/main/TUTORIAL.md).
