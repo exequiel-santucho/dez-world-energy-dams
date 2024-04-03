@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: fact_world_energy_dams
+    description: "Concatenated info about energy demand, separated by hydroelectricity and energy provided by dams counted by countries."
