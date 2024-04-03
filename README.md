@@ -54,7 +54,9 @@ In this sense, we try to answer the following questions:
 
 ### Architecture
 
-<img src="file:///D:/2024/programacion/data_engineering_zoomcamp-data_talks/data-engineering-zoomcamp-homework/final_project/images/arquitecture.PNG" title="" alt="COLOCAR" data-align="center">
+
+
+<img title="" src="file:///D:/2024/programacion/data_engineering_zoomcamp-data_talks/data-engineering-zoomcamp-homework/final_project/images/arquitecture.PNG" alt="COLOCAR" data-align="center">
 
 ### Conclusion
 
