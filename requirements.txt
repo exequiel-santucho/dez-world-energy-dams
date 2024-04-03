@@ -1,0 +1,3 @@
+mage-ai==0.9.68
+mage-ai[google-cloud-storage]
+pycountry==23.12.11

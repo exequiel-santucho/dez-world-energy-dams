@@ -1,0 +1,142 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - add_iso_code_country
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_from_local_2
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_from_local_2
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - select_countries
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: add_iso_code_country
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - load_from_local_2
+  uuid: add_iso_code_country
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - pivot_years_data
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: select_countries
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - add_iso_code_country
+  uuid: select_countries
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - scaling_energy_units
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: pivot_years_data
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - select_countries
+  uuid: pivot_years_data
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - rename_cols
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: scaling_energy_units
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - pivot_years_data
+  uuid: scaling_energy_units
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - export_to_gcs_2
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: rename_cols
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - scaling_energy_units
+  uuid: rename_cols
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: export_to_gcs_2
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - rename_cols
+  uuid: export_to_gcs_2
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-04-01 19:43:15.158407+00:00'
+data_integration: null
+description: ETL for world_hydropower_generation.csv file
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: world_hydropower_generation_etl
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: world_hydropower_generation_etl
+variables_dir: C:\Users\exequ/.mage_data\mage
+widgets: []

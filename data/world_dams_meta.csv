@@ -1,0 +1,60 @@
+Field;Description;Data coverage
+Country;Country;Comprehensive
+ISO;ISO Code;Comprehensive
+Sec_cntry;Second country that dam is associated with;Comprehensive
+Name;Name of the dam structure;Comprehensive
+AltDamName;Alternative dam of the dame;Comprehensive
+Purpose;The purpose of the dam / use;Comprehensive
+Admin_unit;Name of administrative unit;Comprehensive
+Near_city;Name of nearest city to the dam;Comprehensive
+River;Name of the river on which the dam in associated;Comprehensive
+Main_basin;Name of the major river basin in which the dam is located;Comprehensive
+Sub_basin;Name of sub-basin;Comprehensive
+Status;Operational status of the hydropower project;Comprehensive
+PVOUT;Estimated photovoltaic (PV) electricity ouput - yearly sum [Kwh/KWp];Good
+PotentialPVSurface;Potential PV Surface -- 10% coverage of reservoir surface area (conservative) - computed as: (surface area * 0.10);Good
+PV_InstalledCapacity;"Estimated installed capacity in [Mwp/Km2] assuming 10% coverage of reservoir surface area - computed as: ""PotentialPVSurface"" x 123552.5 (1/1000). Assumption 0.5 Mwp/ 1 acre = .00404686 km2 --> 1/.00404686 km2 = 123552.5";Good
+PV_SpaCapacity;Max PV Potential based on the spare transmission capacity [MW] - computed as: (line capacity-2*installed capacity)/rated power);Minimal coverage
+Dam_hgt;Height of the dam in meters [m];Good
+Res_capacityM3;Storage capacity in million cubic meters [m^3];Good
+Res_area_km2;Most reliable reported surface area of reservoir in square kilometers [km^2];Good
+HPP_Install_Cap;Hydropower installed capacity [MW];Good
+Transm_exist;Voltage [kV] information of existing transmission lines;Minimal coverage
+Transm_length;Transmission length [km];Minimal coverage
+Transm_plan;Voltage [kV] information of planned transmission lines;Minimal coverage
+Proj_type;Project type;Minimal coverage
+Lifecycle;Project lifecycle;Minimal coverage
+Storage_ty;Storage type;Minimal coverage
+Linked_prj;Linked project type;Minimal coverage
+Proj_cost;Project cost (US$M);Minimal coverage
+Proj_statu;Project status;Minimal coverage
+Study_stat;study status;Minimal coverage
+Year;Project identification year;Good
+Yr_recents;Completion year of most recent study;Minimal coverage
+Comission_due;Commissioning year/due;Minimal coverage
+Ann_firm_gen;Hydropower annual firm generation (GWh);Minimal coverage
+Ann_tot_ge;Hydropower annual total generation (GWh);Minimal coverage
+Prox_irrig;Proximity to irrigation area [km];Minimal coverage
+Size_irrig;Size of closest irrigation area ( x 103 ha);Minimal coverage
+Owner;Owner(s) of the dam structure;Minimal coverage
+Autom_EMS/SCADA;Power system - availablity of automatic energy management system: SCADA, Generation Dispatch and Control, etc. ;Minimal coverage
+PrivateOwn;Private ownership of renewable energy generation;Minimal coverage
+Feed_in_ta;Feed-in tariff for solar RE;Minimal coverage
+Feed_in__1;Feed-in tariff foreign exchange indexation;Minimal coverage
+Guaranteed;Guaranteed off-take;Minimal coverage
+Competitiv;Competitive bidding;Minimal coverage
+Winning_bi;Winning bid guaranteed off-take;Minimal coverage
+OtherFisca;Other direct fiscal incentives for renewable energy (e.g. capital subsidies, grants or rebates, investment tax credits, tax reductions);Minimal coverage
+Prioritize;Prioritized access to the grid for RE;Minimal coverage
+Priority_d;Priority in dispatch;Minimal coverage
+Compensati;Compensation to IPP if offtake infrastructure is not built in time;Minimal coverage
+Compensa_1;Curtailments compensations for lost generation;Minimal coverage
+Gov_guaran;Government guarantee for utility payments (e.g. through a letter of credit, escrow account, payment guarantee, or other);Minimal coverage
+Regulatory;RISE information on the country;Comprehensive
+Download;URL to database;Comprehensive
+Long__res_;Longitude of point location of dam in decimal degrees;Comprehensive
+Lat__res_;Latitude of point location of dam in decimal degrees;Comprehensive
+Lat__hydro;Longitude of point location of dam in decimal degrees of additional hydro station;Minimal coverage
+Long__hydr;Latitude of point location of dam in decimal degrees of additional hydro station;Minimal coverage
+Database;Source of data;Comprehensive
+Notes;Addition information/notes/comments;Comprehensive
